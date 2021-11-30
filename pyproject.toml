@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "iopy"
+version = "0.0.1"
+description = "Incremental Oscillator Partial Yeeter"
+authors = ["NightlyHerb <82109216+NightlyHerb@users.noreply.github.com>"]
+license = "MIT License"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-sat = { extras = ["pblib", "aiger"], version = "^0.1.7-alpha.14" }
+SQLAlchemy = "^1.4.27"
+sqlparse = "^0.4.2"
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+mypy = "^0.910"
+ipython = "^7.29.0"
+pytest = "^6.2.5"
+snakeviz = "^2.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
